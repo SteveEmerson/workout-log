@@ -1,3 +1,4 @@
+require('dotenv').config();
 let express = require('express');
 let app = express();
 let sequelize = require('./db');
@@ -7,6 +8,7 @@ let user = require('./controllers/user-controller');
 
 sequelize.sync();
 
+app.use(require('./middleware/headers'));
 app.use(express.json());
 
 /**********************
@@ -16,6 +18,8 @@ app.use(express.json());
 app.use('/test/', function(req,res){
   res.send("This is a message from the workout log test endpoint.")
 })
+
+
 app.use('/log', log);
 app.use('/user', user);
 

@@ -2,6 +2,8 @@
 // username ... string ... null = false
 // passwordhash ... string ... null = false
 
+//IF YOU NEED TO CHANGE THE COLUMNS ... DROP THE TABLE IN PGADMIN AND RESTART NODEMON
+
 module.exports = function(sequelize, DataTypes){
   const User = sequelize.define('user',
   {

@@ -4,6 +4,8 @@
 // result ... string
 // owner_id ... integer
 
+//IF YOU NEED TO CHANGE THE COLUMNS ... DROP THE TABLE IN PGADMIN AND RESTART NODEMON
+
 module.exports = function(sequelize, DataTypes){
   const Log = sequelize.define('log',
   {

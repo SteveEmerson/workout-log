@@ -41,7 +41,7 @@ router.post('/register',function(req, res){
  *** LOGIN USER ***
  *************************/
 
-router.post('/login', validateSession, function(req, res){
+router.post('/login', function(req, res){
   User.findOne({
     where: 
     {
@@ -81,5 +81,6 @@ router.post('/login', validateSession, function(req, res){
     );
   });
 });
+
 
 module.exports = router;

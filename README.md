@@ -51,4 +51,4 @@
 | result      | STRING  |
 | owner_id    | INTEGER |
 
-![](images/UserTable.PNG)
+![](images/LogTable.PNG)

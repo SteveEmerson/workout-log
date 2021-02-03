@@ -1,6 +1,6 @@
 # Workout Log Server
 
-## Elevenfifty Academy Web Dev Blue Badge
+## Elevenfifty Academy Web Development Blue Badge
 
 ### Steve Emerson
 
